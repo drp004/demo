@@ -15,7 +15,7 @@ Each route expects:
   - A media file (`image`, `pdf`, `audio`) if applicable
 
 Each response returns:
-```json
+```
 {
   "reply": "LLM generated output",
   "history": [
