@@ -22,8 +22,8 @@ Each response returns:
     { "role": "human", "content": "Explain what is AI?" },
     { "role": "ai", "content": "LLM response" }
   ]
-}```
-
+}
+```
 📝 The history field is a list of objects with role and content. This format remains consistent across all routes.
 
 🖼️ Image Processing
@@ -35,13 +35,15 @@ Content-Type: form-data
 
 Form Fields:
 
-```req: JSON string of the format:
+```
+req: JSON string of the format:
 
 {
   "message": "Your question",
   "history": []
 }
-image: Image file to be processed```
+image: Image file to be processed
+```
 
 📄 PDF Processing
 Endpoint: /studybuddy/process-pdf
@@ -52,9 +54,11 @@ Content-Type: form-data
 
 Form Fields:
 
-```req: JSON string
+```
+req: JSON string
 
-pdf: PDF file to be processed```
+pdf: PDF file to be processed
+```
 
 🎧 Audio Processing
 Endpoint: /studybuddy/process-audio
@@ -65,9 +69,11 @@ Content-Type: form-data
 
 Form Fields:
 
-```req: JSON string
+```
+req: JSON string
 
-audio: Audio file to be processed```
+audio: Audio file to be processed
+```
 
 🗺️ Roadmap Generation
 Endpoint: /studybuddy/roadmap
@@ -78,10 +84,12 @@ Content-Type: application/json
 
 Request Body:
 
-```{
+```
+{
   "message": "Your input",
   "history": []
-}```
+}
+```
 
 📺 YouTube Video Processing
 Endpoint: /studybuddy/roadmap
@@ -93,7 +101,7 @@ Content-Type: application/json
 Request Body:
 ```
 {
-  "message": "YouTube link or question related to it",
+  "message": "YouTube link or query related to it",
   "history": []
 }
 ```
